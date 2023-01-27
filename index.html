@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+        <div class="container card mt-5 ml-5 mr-5 mb-5">
+        <form class="row g-3">
+          <div class="title mt-4 border-bottom bg-light">
+          <h4>Payment form example</h4>
+          </div>
+          
+          <div class="alert alert-danger" role="alert">
+           Some fields are missing
+          </div>
+
+            <div class="col-md-5">
+              <label for="cardNumber" class="form-label">Card #</label>
+              <input type="text" class="form-control" id="cardNumber" placeholder="XXXXXXXXXXX"required>
+            </div>
+            <div class="col-md-3">
+              <label for="cvcNumber" class="form-label">CVC #</label>
+              <input type="password" class="form-control" id="cvcNumber" required>
+            </div>
+            <div class="col-4">
+              <label for="amount" class="form-label">Amount</label>
+              <div class="input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text">$</span>
+              </div>
+            <input type="text" class="form-control" id="amount" placeholder="Amount" required>
+          </div>
+            </div>
+
+            <div class="col-6">
+              <label for="firstName" class="form-label">First Name</label>
+              <input type="text" class="form-control" id="firstName" required>
+            </div>
+             
+            <div class="col-6">
+              <label for="lastName" class="form-label">Last Name</label>
+              <input type="text" class="form-control" id="lastName" required>
+            </div>
+
+            <div class="col-md-6">
+              <label for="inputCity" class="form-label">City</label>
+              <input type="text" class="form-control" id="inputCity" required>
+            </div>
+            <div class="col-md-3">
+              <label for="inputState" class="form-label">State</label>
+              <select id="inputState" class="form-select" required>
+                <option selected>Pick a state</option>
+                  <option value="AL">Alabama</option>
+                  <option value="AK">Alaska</option>
+                  <option value="AZ">Arizona</option>
+                  <option value="AR">Arkansas</option>
+                  <option value="CA">California</option>
+                  <option value="CO">Colorado</option>
+                  <option value="CT">Connecticut</option>
+                  <option value="DE">Delaware</option>
+                  <option value="DC">District Of Columbia</option>
+                  <option value="FL">Florida</option>
+                  <option value="GA">Georgia</option>
+                  <option value="HI">Hawaii</option>
+                  <option value="ID">Idaho</option>
+                  <option value="IL">Illinois</option>
+                  <option value="IN">Indiana</option>
+                  <option value="IA">Iowa</option>
+                  <option value="KS">Kansas</option>
+                  <option value="KY">Kentucky</option>
+                  <option value="LA">Louisiana</option>
+                  <option value="ME">Maine</option>
+                  <option value="MD">Maryland</option>
+                  <option value="MA">Massachusetts</option>
+                  <option value="MI">Michigan</option>
+                  <option value="MN">Minnesota</option>
+                  <option value="MS">Mississippi</option>
+                  <option value="MO">Missouri</option>
+                  <option value="MT">Montana</option>
+                  <option value="NE">Nebraska</option>
+                  <option value="NV">Nevada</option>
+                  <option value="NH">New Hampshire</option>
+                  <option value="NJ">New Jersey</option>
+                  <option value="NM">New Mexico</option>
+                  <option value="NY">New York</option>
+                  <option value="NC">North Carolina</option>
+                  <option value="ND">North Dakota</option>
+                  <option value="OH">Ohio</option>
+                  <option value="OK">Oklahoma</option>
+                  <option value="OR">Oregon</option>
+                  <option value="PA">Pennsylvania</option>
+                  <option value="RI">Rhode Island</option>
+                  <option value="SC">South Carolina</option>
+                  <option value="SD">South Dakota</option>
+                  <option value="TN">Tennessee</option>
+                  <option value="TX">Texas</option>
+                  <option value="UT">Utah</option>
+                  <option value="VT">Vermont</option>
+                  <option value="VA">Virginia</option>
+                  <option value="WA">Washington</option>
+                  <option value="WV">West Virginia</option>
+                  <option value="WI">Wisconsin</option>
+                  <option value="WY">Wyoming</option>
+              </select>
+            
+            </div>
+            <div class="col-md-3">
+              <label for="inputZip" class="form-label">Zip</label>
+              <input type="text" class="form-control" id="inputZip">
+            </div>
+            
+            <div class="col-6 ">
+              <div class="form-check-label pt-1 pb-4 ">We accept:</div> 
+              <div class="payment bg-secondary w-50 pt-1 pb-1">
+                <input class="paymentType" type="radio" id="paymentType">
+                <label class="form-check-label" for="paymentType">
+                  <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                  width="24" height="24"
+                  viewBox="0 0 24 24">
+                      <path d="M 4 4 C 2.895 4 2 4.895 2 6 L 2 18 C 2 19.105 2.895 20 4 20 L 20 20 C 21.105 20 22 19.105 22 18 L 22 6 C 22 4.895 21.105 4 20 4 L 4 4 z M 4 6 L 20 6 L 20 18 L 4 18 L 4 6 z M 10 8 A 4 4 0 0 0 6 12 A 4 4 0 0 0 10 16 A 4 4 0 0 0 12.017578 15.447266 C 12.605446 15.788406 13.276744 16 14 16 C 16.195455 16 18 14.195455 18 12 C 18 9.8045455 16.195455 8 14 8 C 13.276744 8 12.605446 8.2115935 12.017578 8.5527344 A 4 4 0 0 0 10 8 z M 14 10 C 15.104545 10 16 10.895455 16 12 C 16 13.104545 15.104545 14 14 14 C 13.826874 14 13.662162 13.971042 13.501953 13.929688 A 4 4 0 0 0 14 12 A 4 4 0 0 0 13.498047 10.070312 C 13.659348 10.02835 13.825566 10 14 10 z"></path>
+                  </svg>
+                </label>
+
+                <input class="paymentType" type="radio" id="paymentType">
+                <label class="form-check-label" for="paymentType">
+                  <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                  width="24" height="24"
+                  viewBox="0 0 24 24">
+                      <path d="M 4 4 C 2.895 4 2 4.895 2 6 L 2 18 C 2 19.105 2.895 20 4 20 L 20 20 C 21.105 20 22 19.105 22 18 L 22 6 C 22 4.895 21.105 4 20 4 L 4 4 z M 4 6 L 20 6 L 20 18 L 4 18 L 4 6 z M 13.947266 9.4824219 C 12.646266 9.4824219 12.039062 10.177031 12.039062 10.957031 C 12.039062 12.518031 13.773437 12.257109 13.773438 13.037109 C 13.773438 13.210109 13.685187 13.470703 12.992188 13.470703 C 12.298187 13.470703 11.779297 13.210938 11.779297 13.210938 L 11.605469 14.251953 C 11.605469 14.251953 12.03925 14.511719 12.90625 14.511719 C 13.68625 14.598719 14.900391 13.903281 14.900391 12.863281 C 14.900391 11.649281 13.167969 11.562078 13.167969 10.955078 C 13.167969 10.695078 13.340266 10.435547 13.947266 10.435547 C 14.380266 10.435547 14.814453 10.783203 14.814453 10.783203 L 15.074219 9.7421875 C 15.074219 9.7421875 14.467266 9.4824219 13.947266 9.4824219 z M 8.484375 9.5683594 L 7.3574219 13.037109 C 7.3574219 13.037109 7.2714844 12.777516 7.2714844 12.603516 C 6.6644844 11.129516 5.6230469 10.521484 5.6230469 10.521484 L 6.578125 14.423828 L 7.8789062 14.423828 L 9.6992188 9.5683594 L 8.484375 9.5683594 z M 16.894531 9.5683594 L 14.900391 14.423828 L 16.115234 14.423828 L 16.375 13.730469 L 17.935547 13.730469 L 18.109375 14.423828 L 19.150391 14.423828 L 18.195312 9.5683594 L 16.894531 9.5683594 z M 4.1503906 9.6542969 C 4.1503906 9.6542969 6.6645469 10.435859 7.1855469 12.255859 L 6.7519531 10.087891 C 6.7519531 10.087891 6.5776406 9.6542969 6.0566406 9.6542969 L 4.1503906 9.6542969 z M 10.21875 9.6542969 L 9.5253906 14.511719 L 10.740234 14.511719 L 11.519531 9.6542969 L 10.21875 9.6542969 z M 17.330078 11.042969 L 17.677734 12.863281 L 16.636719 12.863281 L 17.330078 11.042969 z"></path>
+                  </svg>
+                </label>
+
+                <input class="paymentType" type="radio" id="paymentType">
+                <label class="form-check-label" for="paymentType">
+                  <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                  width="24" height="24"
+                  viewBox="0 0 16 16">
+                  <path d="M 2.5 3 C 1.6775606 3 1 3.6775606 1 4.5 L 1 11.5 C 1 12.321928 1.6769578 13 2.5 13 L 13.5 13 C 14.322531 13 15 12.322531 15 11.5 L 15 4.5 C 15 3.6769578 14.321928 3 13.5 3 L 2.5 3 z M 2.5 4 L 13.5 4 C 13.782072 4 14 4.2170422 14 4.5 L 14 11.5 C 14 11.781469 13.781469 12 13.5 12 L 2.5 12 C 2.2170422 12 2 11.782072 2 11.5 L 2 4.5 C 2 4.2164394 2.2164394 4 2.5 4 z M 7 5 C 5.3490681 5 4 6.3490681 4 8 C 4 9.6509319 5.3490681 11 7 11 L 9 11 C 10.657 11 12 9.657 12 8 C 12 6.343 10.657 5 9 5 L 7 5 z M 7 6 C 8.1104918 6 9 6.8895082 9 8 C 9 9.1104918 8.1104918 10 7 10 C 5.8895082 10 5 9.1104918 5 8 C 5 6.8895082 5.8895082 6 7 6 z M 6.625 6.875 C 6.164 7.039 5.75 7.478 5.75 8 C 5.75 8.522 6.125 9 6.625 9.125 L 6.625 6.875 z M 7.25 6.875 L 7.25 9.125 C 7.75 9 8.1171875 8.522 8.1171875 8 C 8.1171875 7.478 7.75 7 7.25 6.875 z"></path>
+                  </svg>
+                </label>
+
+                <input class="paymentType" type="radio" id="paymentType">
+                <label class="form-check-label" for="paymentType">
+                  <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                    width="24" height="24"
+                    viewBox="0 0 24 24">
+                        <path d="M 4 4 C 2.895 4 2 4.895 2 6 L 2 18 C 2 19.105 2.895 20 4 20 L 20 20 C 21.105 20 22 19.105 22 18 L 22 6 C 22 4.895 21.105 4 20 4 L 4 4 z M 4 6 L 20 6 L 20 10 L 20 14 L 20 18 L 4 18 L 4 14 L 4 6 z M 4 14 L 4.9003906 14 L 5.1992188 13.099609 L 6.9003906 13.099609 L 7.1992188 14 L 8.9003906 14 L 8.9003906 11 L 10 14 L 10.800781 14 L 11.900391 11.099609 L 11.900391 14 L 12.699219 14 L 12.699219 10 L 11.400391 10 L 10.400391 12.699219 L 9.4003906 10 L 8 10 L 8 13.800781 L 6.5996094 10 L 5.5 10 L 4 14 z M 20 14 L 18.5 12 L 20 10 L 18.900391 10 L 17.900391 11.199219 L 17.099609 10 L 13.800781 10 L 13.800781 14 L 17 14 L 18 12.699219 L 19 14 L 20 14 z M 6 10.800781 L 6.5 12.199219 L 5.5 12.199219 L 6 10.800781 z M 14.599609 10.900391 L 16.599609 10.900391 L 17.400391 12 L 16.5 13.199219 L 14.599609 13.199219 L 14.599609 12.400391 L 16.400391 12.400391 L 16.400391 11.599609 L 14.599609 11.599609 L 14.599609 10.900391 z"></path>
+                    </svg>
+                </label>
+              </div>
+            </div>
+
+            <div class="col-6">
+              <div class="form-floating pb-5">
+                Message
+                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                <label for="floatingTextarea2"></label>
+              </div>
+            </div>
+                  <div class="row pt-4 border-top bg-light">
+                    <div class="col-6"></div>  
+                    <div class="col-6">
+                      <div class="d-grid gap-1 d-md-flex justify-content-md-end pb-3">
+                        <button class="btn btn-secondary me-md-1" type="button">Cancel</button>
+                        <button class="btn btn-primary" type="button">Send</button>
+                      </div>
+                    </div>
+              </div>
+            </div>
+        </form>      
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
